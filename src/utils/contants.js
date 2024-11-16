@@ -1,0 +1,1 @@
+export const BLOCKED_WORDS = ['arse','arsehole','as useful as tits on a bull','balls','bastard','beaver','beef curtains','bell','bellend','bent','berk','bint','bitch','blighter','blimey'];
