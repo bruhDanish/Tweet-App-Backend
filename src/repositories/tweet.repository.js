@@ -1,8 +1,8 @@
 import Tweet from "../schema/tweet.schema.js"
 
-export const createTweet = async ({body}) => {
+export const createTweet = async ({body, image}) => {
     try{
-        const tweet = await Tweet.create({body});
+        const tweet = await Tweet.create({body, image});
         return tweet;
     }catch(err){
         throw err;

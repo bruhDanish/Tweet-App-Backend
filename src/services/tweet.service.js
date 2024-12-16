@@ -1,7 +1,7 @@
 import { Filter } from "bad-words"
 import { createTweet as  createTweetRespository} from "../repositories/tweet.repository.js";
 
-export const createTweet = async ({ body }) => {
+export const createTweet = async ({ body, image }) => {
     //try to find blocked words in the tweet body and if found, throw an error
     const filter = new Filter();
 
@@ -14,7 +14,7 @@ export const createTweet = async ({ body }) => {
         };
     }
 
-    const tweet = await createTweetRespository({ body });
+    const tweet = await createTweetRespository({ body, image });
 
     return tweet;
 
